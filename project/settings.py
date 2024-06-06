@@ -136,5 +136,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "https://maaarcosg.github.io/energy-frontend"
+    "https://maaarcosg.github.io/energy-frontend/"
 ]
