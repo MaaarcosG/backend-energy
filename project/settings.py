@@ -28,12 +28,24 @@ SECRET_KEY = "django-insecure-wg)^8$dzdq%cg!-(-0(15xjd0oazzv+_4yo8(1t)0__es^spud
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost",
+    "https://maaarcosg.github.io/energy-frontend/"
+]
+
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
+
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
     "backend-energy.onrender.com",
+    "maaarcosg.github.io"
 ]
-
 
 # Application definition
 
@@ -133,7 +145,3 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-]
